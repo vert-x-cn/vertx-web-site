@@ -46,6 +46,60 @@
     ga('send', 'pageview');
     ga('tracker.send', 'pageview');
   </script>
+  <style>
+    .page-link-to-github {
+      position: relative;
+      z-index: 1;
+      display: inline-block;
+      border: 1px solid #782B90;
+      border-radius: 5px;
+      color: #782B90;
+      font-size: 12px;
+      padding: 4px 10px;
+      text-decoration: none;
+      background-color: #ffffff;
+    }
+    .page-link-to-github:hover {
+      color: #ffffff;
+      border-color: #ffffff;
+      background-color: #782B90;
+    }
+
+    .page-link-to-github .github-icon {
+      position: absolute;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      /*background-position: -50px 0*/
+      background: url('{{ site_url }}assets/github.png') no-repeat 0 0;
+    }
+
+    @media (-webkit-min-device-pixel-ratio: 2),(min-resolution:192dpi) {
+      .page-link-to-github .github-icon {
+        background-image:url('{{ site_url }}assets/github@2x.png');
+        background-size: 150px auto
+      }
+    }
+
+    .page-link-to-github:hover .github-icon {
+      /*background-position: 0 0*/
+      background-position: -100px 0
+    }
+    .text {
+      text-decoration: underline
+    }
+    .page-link-to-github .text {
+      padding-left: 27px
+    }
+    .text {
+      padding-right: 8px
+    }
+    .page-link-to-github {
+      float: right;
+      top: 4px
+    }
+
+  </style>
 </head>
 <body>
 
@@ -70,12 +124,12 @@
     <nav class="collapse navbar-collapse" id="vertx-navbar-collapse">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="http://start.vertx.io">Starter</a></li>
-        <li><a href="{{ site_url }}download/">Download</a></li>
-        <li><a href="{{ site_url }}docs/">Documentation</a></li>
-        <li><a href="https://github.com/vert-x3/wiki/wiki">Wiki</a></li>
-        <li><a href="{{ site_url }}community/">Community</a></li>
-        <li><a href="{{ site_url }}materials/">Materials</a></li>
-        <li><a href="{{ site_url }}blog/">Blog</a></li>
+        <li><a href="{{ site_url }}download/">下载</a></li>
+        <li><a href="{{ site_url }}docs/">文档</a></li>
+        <li><a href="https://github.com/vert-x3/wiki/wiki">维基</a></li>
+        <li><a href="{{ site_url }}community/">社区</a></li>
+        <li><a href="{{ site_url }}materials/">资料</a></li>
+        <li><a href="{{ site_url }}blog/">博客</a></li>
       </ul>
     </nav>
   </div>
