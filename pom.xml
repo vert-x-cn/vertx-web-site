@@ -25,10 +25,11 @@
     <artifactId>vertx-web-site-translation-chinese-parent</artifactId>
     <groupId>tk.okou</groupId>
     <version>1.0-SNAPSHOT</version>
+    <relativePath>../pom.xml</relativePath>
   </parent>
 
   <artifactId>vertx-web-site-translation-chinese</artifactId>
-  <version>3.6.0-SNAPSHOT</version>
+  <version>3.6.0.CR1</version>
 
   <name>Vert.x Website</name>
 
@@ -418,20 +419,15 @@
       <artifactId>highlightjs</artifactId>
       <version>${highlightjs.version}</version>
     </dependency>
-
-
-
     <dependency>
       <groupId>io.vertx</groupId>
       <artifactId>vertx-lang-ceylon</artifactId>
-      <version>${vertx.docs.version}</version>
       <classifier>docs</classifier>
       <type>zip</type>
     </dependency>
     <dependency>
       <groupId>io.vertx</groupId>
       <artifactId>vertx-lang-ceylon-stack</artifactId>
-      <version>${vertx.docs.version}</version>
       <classifier>docs</classifier>
       <type>zip</type>
     </dependency>
@@ -468,7 +464,7 @@
       <artifactId>vertx-lang-jphp</artifactId>
       <classifier>docs</classifier>
       <type>zip</type>
-      <version>3.6.0-SNAPSHOT</version>
+      <version>3.6.0.CR1</version>
     </dependency>
   </dependencies>
 
