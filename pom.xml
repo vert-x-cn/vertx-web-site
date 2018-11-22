@@ -29,7 +29,7 @@
   </parent>
 
   <artifactId>vertx-web-site-translation-chinese</artifactId>
-  <version>3.6.0.CR1</version>
+  <version>3.6.0.CR2</version>
 
   <name>Vert.x Website</name>
 
@@ -452,7 +452,7 @@
       <artifactId>vertx-lang-jphp</artifactId>
       <classifier>docs</classifier>
       <type>zip</type>
-      <version>3.6.0.CR1</version>
+      <version>3.6.0.CR2</version>
     </dependency>
   </dependencies>
 
