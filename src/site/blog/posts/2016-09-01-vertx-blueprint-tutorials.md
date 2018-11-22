@@ -31,7 +31,7 @@ The tutorials are:
 - [Vert.x Blueprint - Todo Backend (English version)](http://sczyh30.github.io/vertx-blueprint-todo-backend/)
 - [Vert.x Blueprint - Todo Backend (Chinese version)](http://sczyh30.github.io/vertx-blueprint-todo-backend/cn/)
 
-![](https://raw.githubusercontent.com/sczyh30/vertx-blueprint-todo-backend/master/docs/img/vertx-todobackend-ui.png)
+![](/assets/blog/blueprint-tutorials/vertx-todobackend-ui.png)
 
 # Vert.x Blueprint - Vert.x Kue
 

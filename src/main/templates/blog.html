@@ -7,7 +7,7 @@
 
       {% for post in c %}
       <article class="blog-post">
-          <h2 class="blog-post-title"><a href="{{ site_url }}{{post.path}}/">{{post.title}}</a></h2>
+          <h2 class="blog-post-title"><a href="{{ site_url }}{{post.path}}/">{% if post.chineseTitle %}{{ post.chineseTitle }}{% else %}{{post.title}}{% endif %}</a></h2>
           {% if post.date %}
             <p class="blog-post-meta">{{post.date | date}} by
               <a href="http://github.com/{{post.author}}">{{post.author}}</a></p>

@@ -4,7 +4,17 @@
     <h4>Recent Posts</h4>
     <ul>
       {% for post in recent %}
-      <li><a href="{{site_url}}{{post.path}}/">{{post.title}}</a></li>
+      <li><a href="{{site_url}}{{post.path}}/">{% if post.chineseTitle %}{{ post.chineseTitle }}{% else %}{{post.title}}{% endif %}</a></li>
+      {% endfor %}
+    </ul>
+    <h4>中文博客</h4>
+    <ul>
+      {% set recent2 = collections.blog %}
+      {% for post in recent2 %}
+      {% if post.chineseTitle %}
+      <li><a href="{{site_url}}{{post.path}}/">{{post.chineseTitle}}</a></li>
+      {% endif %}
+
       {% endfor %}
     </ul>
     <a class="browse-all" href="{{site_url}}blog/archives">&laquo; Browse all posts by date</a>

@@ -13,7 +13,7 @@
                 <span class="blog-archives-day">{{ post.date | date }}</span>
               </div>
               <div class="col-md-8">
-                <a href="{{ site_url }}{{ post.path }}/">{{ post.title }}</a>
+                <a href="{{ site_url }}{{ post.path }}/">{% if post.chineseTitle %}{{ post.chineseTitle }}{% else %}{{post.title}}{% endif %}</a>
               </div>
             </div>
           {% endfor %}

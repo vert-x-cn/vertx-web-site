@@ -8,7 +8,7 @@
       <atom:link href="{{ 'feed.xml' | link}}" rel="self" type="application/rss+xml" />
       {% for post in collections.blog %}
         <item>
-          <title>{{ post.title }}</title>
+          <title>{% if post.chineseTitle %}{{ post.chineseTitle }}{% else %}{{post.title}}{% endif %}</title>
           <description>{{ post.contents | extractContent }}</description>
           <pubDate>{{post.date | xmldate }}</pubDate>
           <link>{{ post.path | link}}</link>
