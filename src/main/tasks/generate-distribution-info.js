@@ -4,8 +4,8 @@ var fs = require("fs");
 var request = require("request");
 var Q = require("q");
 
-// var ARTIFACT_URL = "https://dl.bintray.com/vertx/downloads/"
-var ARTIFACT_URL = "http://localhost:8090/"
+var ARTIFACT_URL = "https://dl.bintray.com/vertx/downloads/"
+// var ARTIFACT_URL = "http://localhost:8090/"
 
 var TEMPLATE_MIN_TAR_GZ  = "vert.x-{{version}}.tar.gz";
 var TEMPLATE_MIN_ZIP     = "vert.x-{{version}}.zip";
